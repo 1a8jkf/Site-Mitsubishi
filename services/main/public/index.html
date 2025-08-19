@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- ==================== BLOCO 1: Meta Tags ==================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff0000">
+    <meta name="description" content="Fancar Mitsubishi - Concessionária Oficial Mitsubishi Motors" />
+    <meta name="keywords" content="Mitsubishi, Fancar, Concessionária, Mitsubishi Motors, Carros, Veículos, Venda de Carros, Seminovos, Consórcio, Peças e Serviços" />
+    <meta name="author" content="Fancar Mitsubishi" />
+
+    <!-- ==================== TITLE ==================== -->
+    <title>Mitsubishi | Fancar</title>
+    <link rel="icon" href="assets/icons/favicon-Mitsubishi.png" type="image/x-icon">
+
+    <!-- ==================== BLOCO 2: Importação de CSS ==================== -->
+     <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ==================== BLOCO 3: Scripts Gerais ==================== -->
+     <script src="js/index.js"></script>
+
+    <!-- ==================== BLOCO 4: Scripts de Componentes ==================== -->
+
+    <!-- ==================== BLOCO 5: Analytics & SEO ==================== -->
+  </head>
+<body>
+    <div id="cookie-banner" class="cookie-banner hidden">
+        <div class="cookie-banner-content">
+            <p>Nós coletamos cookies para oferecer um serviço personalizado e tornar melhor a sua experiência de navegação. Leia nossa <a href="">Política de Privacidade</a>. Utilize as opções a seguir para configurar suas preferências quanto à coleta de cookies.</p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies">Concordar</button>
+                <button id="reject-cookies">Recusar</button>
+            </div>
+        </div>
+    </div>
+    <header class="main-header">
+        <div class="main-header-center-top-div">
+            <div class="main-header-logo-div">
+                <a href="">
+                    <img src="assets/images/logos/logo-vermelha.png" alt="logo mitsubishi" class="main-header-logo">
+                </a>
+            </div>
+
+
+            <div class="main-header-location-content">
+                <form action="">
+                    <select id="locationSelect">
+                        <option value="foz">Mitsubishi Fancar - Foz do Iguaçu</option>
+                        <option value="umuarama">Mitsubishi Fancar - Umuarama</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+
+        <div class="main-header-center-mobile-div">
+            <div class="main-header-logo-div">
+                <a href="">
+                    <img src="assets/images/logos/logo-vermelha.png" alt="logo mitsubishi" class="main-header-logo">
+                </a>
+            </div>
+
+
+            <div class="mobile-menu-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="mobile-menu-overlay" id="mobileMenu">
+                <nav class="mobile-nav">
+                    <ul>
+                        <li><a href="#">NOVOS</a></li>
+                        <li><a href="https://seminovos.fancar.com.br/">SEMINOVOS</a></li>
+                        <li><a href="#">VENDA DIRETA</a></li>
+                        <li><a href="#">OFERTAS</a></li>
+                        <li><a href="#">PEÇAS E SERVIÇOS</a></li>
+                        <li><a href="https://consorciofancar.com.br/">CONSÓRCIO</a></li>
+                        <li><a href="https://fancor.com.br/">FANCOR SEGUROS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="main-header-center-bottom-div">
+            <nav class="main-header-nav">
+                <ul>
+                    <li><a href="#">NOVOS</a></li>
+                    <li><a href="https://seminovos.fancar.com.br/">SEMINOVOS</a></li>
+                    <li><a href="#">VENDA DIRETA</a></li>
+                    <li><a href="#">OFERTAS</a></li>
+                    <li><a href="#">PEÇAS E SERVIÇOS</a></li>
+                    <li><a href="https://consorciofancar.com.br/">CONSÓRCIO</a></li>
+                    <li><a href="https://fancor.com.br/">FANCOR SEGUROS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main-carrousel-div">
+        <div class="carrousel-div">
+            <div class="main-form-div desktop">
+                <form action="">
+                     <div class="main-form-input-div">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                     </div>
+                     <div class="main-form-input-div">
+                        <input type="text" name="telefone" placeholder="Telefone" required>
+                     </div>
+                     <div class="main-form-input-div">
+                        <input type="cidade" name="cidade" placeholder="Cidade" required>
+                     </div>
+
+                     <div class="checkboxes-div">
+                        <h2>Departamento</h2>
+
+                        <div class="checkboxes-items-div">
+                            <div class="checkboxes-item-div">
+                                <label for="vendas">Vendas</label>
+                                <input type="checkbox" name="departamento" id="vendas" required>
+                            </div>
+
+                            <div class="checkboxes-item-div">
+                                <label for="pos-vendas">Pós Vendas</label>
+                                <input type="checkbox" name="departamento" id="pos-vendas" required>
+                            </div>
+                        </div>
+                     </div>
+
+
+                     <div class="main-form-input-div">
+                        <select name="veiculo" id="select-veiculo">
+                            <option value="" selected disabled hidden>Veículo</option>
+                        </select>
+                     </div>
+
+                     <button>Conversar com um consultor</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <main>
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="main-section">
+            <div class="main-section-vertical-div">
+                <h1 class="main-section-center-content-title">CONHEÇA TODOS OS MODELOS</h1>
+
+                <div class="main-content-carousel-div">
+                    <img src="assets/icons/angle-left.png" alt="langle-circle-left" class="carousel-btn left">
+
+                    <div class="carousel-items-wrapper">
+                        <div class="carousel-items-div" id="carousel-items">
+
+                        </div>
+                    </div>
+
+                    <img src="assets/icons/angle-right.png" alt="angle-circle-right" class="carousel-btn right">
+                </div>
+
+
+
+
+
+
+
+
+                <div class="main-form-div mobile">
+                    <form action="">
+                        <div class="main-form-input-div">
+                            <input type="text" name="nome" placeholder="Nome" required>
+                        </div>
+                        <div class="main-form-input-div">
+                            <input type="text" name="telefone" placeholder="Telefone" required>
+                        </div>
+                        <div class="main-form-input-div">
+                            <input type="cidade" name="cidade" placeholder="Cidade" required>
+                        </div>
+
+                        <div class="checkboxes-div">
+                            <h2>Departamento</h2>
+
+                            <div class="checkboxes-items-div">
+                                <div class="checkboxes-item-div">
+                                    <label for="vendas">Vendas</label>
+                                    <input type="checkbox" name="departamento" id="vendas" required>
+                                </div>
+
+                                <div class="checkboxes-item-div">
+                                    <label for="pos-vendas">Pós Vendas</label>
+                                    <input type="checkbox" name="departamento" id="pos-vendas" required>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="main-form-input-div">
+                            <select name="veiculo" id="select-veiculo">
+                                <option value="" selected disabled hidden>Veículo</option>
+                            </select>
+                        </div>
+
+                        <button>Conversar com um consultor</button>
+                    </form>
+                </div>
+            </div>
+            <div class="main-section-horizontal-div">
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        
+
+        <section class="second-section">
+            <div class="second-section-vertical-div">
+                <div class="title-mobile-div">
+                    <h1>SEMINOVOS</h1>
+                </div>
+               
+                <div class="mobile-retangular-cards-div">
+                <img src="assets/icons/angle-left.png" alt="angle-circle-right" class="mobile-cards-btn" id="prevBtn">
+                <div class="mobile-retangular-cards-viewport">
+                    <div class="mobile-retangular-cards-slider" id="cardSlider">
+                    <!-- Cards gerados via JS -->
+                    </div>
+                </div>
+                <img src="assets/icons/angle-right.png" alt="angle-circle-right" class="mobile-cards-btn" id="nextBtn">
+                </div>
+            </div>
+            <div class="second-section-horizontal-content-div">
+                <div class="retangular-cards-div">
+                    <div class="retangular-cards-center-div">
+                        <div class="retangular-card">
+                            <div class="retangular-card-header">
+                                <img src="assets/images/mitsubishi-eclipse-cross-1.5-mivec-turbo-gasolina-hpe-cvt-wmimagem13160126120.jpg" alt="card image">
+                            </div>
+                            <div class="retangular-card-body">
+                                <b>MITSUBISHI</b>
+                                <h1>MITSUBISHI ECLIPSE CROSS 1.5 MIVEC TURBO GASOLINA HPE CVT</h1>
+
+                                <div class="retangular-card-body-icons-div">
+                                    <div class="retangular-card-body-icon">
+                                        <img src="assets/icons/date.png" alt="date icon">
+                                        <p>2023/2024</p>
+                                    </div>
+
+                                    <div class="retangular-card-body-icon">
+                                        <img src="assets/icons/gauge.png" alt="date icon">
+                                        <p>14.864</p>
+                                    </div>
+                                </div>
+
+                                <div class="retangular-card-body-location-div">
+                                    <img src="assets/icons/location.png" alt="location icon">
+                                    <p>Foz do Iguaçu - PR</p>
+                                </div>
+                                    
+                                <div class="retangular-card-body-price-div">
+                                    <h2>245.900,00</h2>
+                                    <button>Ver mais</button>
+                                </div>
+
+                                <div class="retangular-card-body-social-div">
+                                    <p>Compartilhe</p>
+                                    <img src="assets/icons/share-square.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="retangular-card">
+                            <div class="retangular-card-header">
+                                <img src="assets/images/mitsubishi-pajero-sport-2.4-16v-mivec-turbo-diesel-hpe-awd-automatico-wmimagem10555169137.jpg" alt="card image">
+                            </div>
+                            <div class="retangular-card-body">
+                                <b>MITSUBISHI</b>
+                                <h1>MITSUBISHI PAJERO SPORT 2.4 16V MIVEC TURBO DIESEL HPE AWD AUTOMÁTICO</h1>
+
+                                <div class="retangular-card-body-icons-div">
+                                    <div class="retangular-card-body-icon">
+                                        <img src="assets/icons/date.png" alt="date icon">
+                                        <p>2020/2020</p>
+                                    </div>
+
+                                    <div class="retangular-card-body-icon">
+                                        <img src="assets/icons/gauge.png" alt="date icon">
+                                        <p>61.049</p>
+                                    </div>
+                                </div>
+
+                                <div class="retangular-card-body-location-div">
+                                    <img src="assets/icons/location.png" alt="location icon">
+                                    <p>Umuarama - PR</p>
+                                </div>
+                                    
+                                <div class="retangular-card-body-price-div">
+                                    <h2>209.900,00</h2>
+                                    <button>Ver mais</button>
+                                </div>
+
+                                <div class="retangular-card-body-social-div">
+                                    <p>Compartilhe</p>
+                                    <img src="assets/icons/share-square.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="retangular-card">
+                            <div class="retangular-card-header">
+                                <img src="assets/images/YJ55kizFPj7n7tQYyqf0jm6FQOsPgVot.jpg" alt="card image">
+                            </div>
+                            <div class="retangular-card-body">
+                                <b>MITSUBISHI</b>
+                                <h1>L200 TRITON 2.4 16V TURBO DIESEL SPORT HPE-S CD 4P 4X4 AUTOMÁTICO</h1>
+
+                                <div class="retangular-card-body-icons-div">
+                                    <div class="retangular-card-body-icon">
+                                        <img src="assets/icons/date.png" alt="date icon">
+                                        <p>2022/2023</p>
+                                    </div>
+
+                                    <div class="retangular-card-body-icon">
+                                        <img src="assets/icons/gauge.png" alt="date icon">
+                                        <p>15.864</p>
+                                    </div>
+                                </div>
+
+                                <div class="retangular-card-body-location-div">
+                                    <img src="assets/icons/location.png" alt="location icon">
+                                    <p>Foz do Iguaçu - PR</p>
+                                </div>
+                                    
+                                <div class="retangular-card-body-price-div">
+                                    <h2>225.000,00</h2>
+                                    <button>Ver mais</button>
+                                </div>
+
+                                <div class="retangular-card-body-social-div">
+                                    <p>Compartilhe</p>
+                                    <img src="assets/icons/share-square.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="title-div">
+                        <h1>SEMINOVOS</h1>
+                        <p>Veículos de procedência garantida que você já conhece!</p>
+                        <a href="">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="third-section">
+            <div class="third-section-vertical-content-div">
+                <div class="header-title-div">
+                    <h1>CONHEÇA A MITSUBISHI FANCAR</h1>
+                </div>
+            </div>
+            <div class="thrid-section-mobile-content-div">
+                <div class="header-title-div">
+                    <h1>CONHEÇA A MITSUBISHI FANCAR</h1>
+                </div>
+                <div class="video-container-div">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ft7qQVpMwUM?si=jR793IWRiwgv-H80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="title-div">
+                        <h1>Uma Nova Experiência</h1>
+                        <p>Mais de 30 anos de tradição, agora a Fancar também é Mitsubishi!</p>
+                        <a href="">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="third-section-horizontal-content-div">
+                <div class="video-container-div">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ft7qQVpMwUM?si=jR793IWRiwgv-H80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="title-div">
+                        <h1>Uma Nova Experiência</h1>
+                        <p>Mais de 30 anos de tradição, agora a Fancar também é Mitsubishi!</p>
+                        <a href="">Ver mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="fourth-section">
+            <div class="fourth-section-vertical-content-div">
+
+            </div>
+
+            <div class="fourth-section-horizontal-content-div">
+                <div class="location-div">
+                    <div class="location-map-div">
+                        <iframe id="mapFrame"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.269225102445!2d-54.58818828458129!3d-25.516198741228436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9457a6a43cf6aa05%3A0xb401f17f9c2b6e39!2sAv.%20Costa%20e%20Silva%2C%201165%20-%20Parque%20Pres.%20I%2C%20Foz%20do%20Igua%C3%A7u%20-%20PR%2C%2085845-000!5e0!3m2!1spt-BR!2sbr!4v1750879876543!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="social-items-div">
+                        <h1 id="locationTitle">Fancar Foz do Iguaçu</h1>
+                        <p id="locationAddress">Endereço: Av. Costa e Silva, 1165 - Foz do Iguaçu - PR, 85845-000</p>
+
+                        <div class="social-items">
+                            <div class="social-item">
+                                <img src="assets/icons/map-location.png" alt="phone icon">
+                                <a href="">Como chegar</a>
+                            </div>
+
+                            <div class="social-item">
+                                <img src="assets/icons/whatsapp.png" alt="whatsapp icon">
+                                <a href="">Whatsapp loja</a>
+                            </div>
+
+                            <div class="social-item">
+                                <img src="assets/icons/whatsapp.png" alt="email icon">
+                                <a href="">Whatsapp serviços</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <footer class="main-footer">
+        <div class="main-footer-vertical-content-div">
+            <div class="horizontal-items-div">
+                <div class="horizontal-item-div">
+                    <img src="assets/images/logos/logo-branca.png" alt="footer-logo">
+                </div>
+
+                <div class="items-footer-div">
+                    <h1>Localização</h1>
+                    <a href="">Foz do Iguaçu</a>
+                    <a href="">Umuarama</a>
+                </div>
+
+                <div class="items-footer-div">
+                    <h1>Visite nossas redes sociais</h1>
+                    <div class="social-item-div">
+                        <img src="assets/icons/facebook.png" alt="facebook">
+                        <a href="">mitsubishifancar</a>
+                    </div>
+                    <div class="social-item-div">
+                        <img src="assets/icons/instagram.png" alt="facebook">
+                        <a href="">mitsubishifancar</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="horizontal-items-div">
+                <div class="copyright-div">
+                    <p>© 2024 Fancar. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer-horizontal-content-div">
+
+        </div>
+    </footer>
+</body>
+</html>
